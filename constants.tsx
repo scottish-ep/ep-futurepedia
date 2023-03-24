@@ -13,3 +13,120 @@ export const homepageData = {
   countAI: 1407,
   countCat: 50
 }
+
+export const categoryData = [
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  },
+  {
+    name: 'test',
+    count: 123,
+    link: "#"
+  }
+]
+
+export const tagData = [
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+  {
+    name: 'test',
+    slug: "#"
+  },
+]

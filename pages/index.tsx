@@ -5,12 +5,14 @@ import classNames from 'classnames'
 
 import styles from '@/styles/Home.module.scss'
 
-import { headerMenu, homepageData } from '@/constants'
+import { headerMenu, homepageData, categoryData, tagData } from '@/constants'
 import Header from '@/components/Header/Header'
 import IterateChip from '@/components/IterateChip/IterateChip'
 import CustomButton from '@/components/CustomButton/CustomButton'
 import SearchBar from '@/components/SearchBar/SearchBar'
+import ChipSwiper from '@/components/ChipSwiper/ChipSwiper'
 
+import { InputLabel, NativeSelect } from '@mui/material'
 import PeopleIcon from '@mui/icons-material/People';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SellIcon from '@mui/icons-material/Sell';
@@ -19,6 +21,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Handyman from '@mui/icons-material/Handyman';
 import Article from '@mui/icons-material/Article'
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 export default function Home() {
   return (
@@ -114,7 +117,24 @@ export default function Home() {
 
           <div className={styles.content__wrapper}>
             <div className={styles.filter_section}>
-              <SearchBar searchPlaceholder={'Search ' + (homepageData.countAI || '0') + ' AI tools and ' + (homepageData.countCat || '0') + ' categories'}/>
+              <SearchBar 
+                categoryData={categoryData}
+                searchPlaceholder={'Search ' + (homepageData.countAI || '0') + ' AI tools and ' + (homepageData.countCat || '0') + ' categories'}
+              />
+
+              <div className={styles.filter_menu}>
+                <CustomButton
+                  bgColor='transparent'
+                  hoverBgColor='#333333'
+                  borderColor='#656D79'
+                >
+                  Filter
+                  <FilterAltIcon/>
+                </CustomButton>
+
+                <ChipSwiper className={styles.swiper__wrapper} tags={tagData} />
+              </div>
+
             </div>
           </div>
         </div>
