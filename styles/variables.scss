@@ -1,0 +1,59 @@
+$primary-bg: #374151;
+$secondary-bg: #556581;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+
+$box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+$box-shadow-1: 0px 16px 16px rgba(205, 204, 221, 0.25);
+
+//input field
+$input-height: 22px;
+$field-height-sm: 34px;
+$field-height-md: 40px;
+$field-height-lg: 52px;
+
+//padding
+$p-xl: 13px 48px;
+$p-2lg: 16px 32px;
+$p-lg: 14px 22px;
+$p-md: 8px 12px;
+$p-sm: 6px 9px;
+$p-xs: 4px 8px;
+
+//font-weight
+$font-super-bold: 800;
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-normal: 500;
+$font-base: 400;
+$font-light: 300;
+
+//font-size
+$text-3xl: 32px;
+$text-2xl: 28px;
+$text-xl: 24px;
+$text-lg: 20px;
+$text-lg: 18px;
+$text-md: 16px;
+$text-sm: 14px;
+$text-2xs: 13px;
+$text-xs: 12px;
+$text-2xs: 10px;
+
+//line-height
+$line-height-sm: 0.75rem;
+$line-height: 1rem;
+$line-height-lg: 1.25rem;
+$line-height-xl: 1.5rem;
+
+//Breakpoints
+$medium-desktop: 1400px;
+$small-desktop: 1200px;
+$big-tablet: 992px;
+$medium-tablet: 768px;
+$small-tablet: 572px;
+$mobile: 500px;
+$medium-mobile: 450px;
+$small-mobile: 380px;
+$mini-mobile: 360px;
