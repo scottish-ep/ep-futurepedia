@@ -1,0 +1,22 @@
+@import "styles/variables.scss";
+
+.chip__wrapper {
+  position: relative;
+  content: " ";
+  height: $line-height-xl;
+  width: 160px;
+  margin: auto;
+  .chip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.2s;
+  }
+  .hide {
+    opacity: 0;
+    transition: 0.2s;
+  }
+}

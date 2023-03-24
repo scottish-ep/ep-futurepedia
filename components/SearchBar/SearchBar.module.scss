@@ -1,0 +1,32 @@
+@import "styles/variables.scss";
+
+.search_bar__wrapper{
+  position: relative; 
+  .search_input {
+    width: 100%;
+    background: transparent;
+    padding: 20px 14px;
+    border-radius: $border-radius-lg;
+    border: 1px solid $primary-border;
+    font-size: $text-md;
+    &::placeholder {
+      color: #9BA0A8;
+      font-weight: 500;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid rgb(56, 189, 248);
+    }
+  }
+
+  .search_btn {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

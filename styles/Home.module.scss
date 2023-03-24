@@ -1,0 +1,53 @@
+@import 'styles/variables.scss';
+
+.main__wrapper {
+  font-family: DM Sans, sans-serif !important;
+  font-weight: 600;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 90px;
+  .title__wrapper {
+    padding-top: 48px;
+    text-align: center;
+    .stats {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: 24px;
+      margin: 12px auto;
+      .chip {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &.iterate {
+          font-size: $text-sm;
+          justify-content: center;
+          a {
+            gap: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 3.75rem;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: rgb(204, 204, 204);
+    }
+    .btn_section__wrapper {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      .btn__wrapper {
+        margin: 0 12px;
+      }
+    }
+  }
+}

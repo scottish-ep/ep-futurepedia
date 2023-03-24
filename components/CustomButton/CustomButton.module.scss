@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.btn__wrapper {
+  padding: $p-btn;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  .noti_chip {
+    position: absolute;
+    top: -12px;
+    right: -24px;
+    background-color: rgb(56, 189, 248);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: $text-xs;
+    line-height: $line-height-xl;
+  }
+  .btn {
+    border: 1px solid transparent;
+    padding: $p-btn;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+  }
+}
