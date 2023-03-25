@@ -12,6 +12,7 @@ import CustomButton from '@/components/CustomButton/CustomButton'
 import SearchBar from '@/components/SearchBar/SearchBar'
 import ChipSwiper from '@/components/ChipSwiper/ChipSwiper'
 import FilterDropdown from '@/components/FilterDropdown/FilterDropdown'
+import ToolPanel from '@/components/ToolPanel/ToolPanel'
 
 import PeopleIcon from '@mui/icons-material/People';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -146,6 +147,117 @@ export default function Home() {
               </div>
 
               
+            </div>
+
+            <div className={styles.tool_listing}>
+              <ToolPanel
+                className={styles.panel}
+                title='test'
+                pricePerMonth={16}
+                isVerified={true}
+                isSponsor={true}
+                favoriteCount={23}
+                description='Build websites including copy & images in 30 seconds. Fill in the form and have an AI generate website built and ready at your disposal complete with text, images and styling. '
+                tags={[
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  },
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  }
+                ]}
+                feature={[
+                  {
+                    text: "API",
+                    icon: "Discord"
+                  },
+                  {
+                    text: "Browser",
+                    icon: "API"
+                  }
+                ]}
+
+                hashtag={
+                  [
+                    "human resources", "test"
+                  ]
+                }
+                thumbnailUrl="https://picsum.photos/340/160"
+              />
+              <ToolPanel
+                className={styles.panel}
+                title='test'
+                pricePerMonth={16}
+                isVerified={true}
+                isSponsor={true}
+                favoriteCount={23}
+                description='Build websites including copy & images in 30 seconds. Fill in the form and have an AI generate website built and ready at your disposal complete with text, images and styling. '
+                tags={[
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  },
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  }
+                ]}
+                feature={[
+                  {
+                    text: "API",
+                    icon: "Discord"
+                  },
+                  {
+                    text: "Browser",
+                    icon: "API"
+                  }
+                ]}
+
+                hashtag={
+                  [
+                    "human resources", "test"
+                  ]
+                }
+                thumbnailUrl="https://picsum.photos/340/160"
+              />
+              <ToolPanel
+                className={styles.panel}
+                title='test'
+                pricePerMonth={16}
+                isVerified={true}
+                isSponsor={true}
+                favoriteCount={23}
+                description='Build websites including copy & images in 30 seconds. Fill in the form and have an AI generate website built and ready at your disposal complete with text, images and styling. '
+                tags={[
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  },
+                  {
+                    text: "Free",
+                    icon: "Tick"
+                  }
+                ]}
+                feature={[
+                  {
+                    text: "API",
+                    icon: "Discord"
+                  },
+                  {
+                    text: "Browser",
+                    icon: "API"
+                  }
+                ]}
+
+                hashtag={
+                  [
+                    "human resources", "test"
+                  ]
+                }
+                thumbnailUrl="https://picsum.photos/340/160"
+              />
             </div>
           </div>
         </div>

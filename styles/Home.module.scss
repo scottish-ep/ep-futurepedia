@@ -6,6 +6,7 @@
   max-width: 1200px;
   margin: auto;
   margin-top: 90px;
+  margin-bottom: 90px;
   .title__wrapper {
     padding-top: 48px;
     text-align: center;
@@ -68,6 +69,15 @@
         .btn__wrapper {
           width: 20%;
         }
+      }
+    }
+    .tool_listing {
+      margin-top: 48px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      .panel {
+        width: calc(100% / 3 - 12px);
       }
     }
   }

@@ -27,8 +27,8 @@ const CustomButton = (props: CustomButtonInterface) => {
     hoverTextColor,
     hoverBorderColor,
     children,
-    clickFunction,
-    btnUrl,
+    clickFunction = () => {},
+    btnUrl = "",
     notiCount,
     className,
   } = props;
@@ -40,7 +40,7 @@ const CustomButton = (props: CustomButtonInterface) => {
   return (
     <div className={classNames(styles.btn__wrapper, className)}>
       {notiCount && <div className={styles.noti_chip}>{notiCount}</div>}
-      {btnUrl ? (
+      {!btnUrl ? (
         <button
           style={{
             color: textCol,
@@ -59,13 +59,13 @@ const CustomButton = (props: CustomButtonInterface) => {
             setBtnCol(bgColor);
             setBordCol(borderColor);
           }}
-          onClick={clickFunction || ""}
+          onClick={clickFunction}
         >
           {children}
         </button>
       ) : (
         <Link
-          href={btnUrl || "#"}
+          href={btnUrl}
           style={{
             color: textCol,
             backgroundColor: btnCol,
