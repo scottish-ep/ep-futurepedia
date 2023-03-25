@@ -11,8 +11,8 @@ import IterateChip from '@/components/IterateChip/IterateChip'
 import CustomButton from '@/components/CustomButton/CustomButton'
 import SearchBar from '@/components/SearchBar/SearchBar'
 import ChipSwiper from '@/components/ChipSwiper/ChipSwiper'
+import FilterDropdown from '@/components/FilterDropdown/FilterDropdown'
 
-import { InputLabel, NativeSelect } from '@mui/material'
 import PeopleIcon from '@mui/icons-material/People';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SellIcon from '@mui/icons-material/Sell';
@@ -23,7 +23,10 @@ import Handyman from '@mui/icons-material/Handyman';
 import Article from '@mui/icons-material/Article'
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
+
 export default function Home() {
+  
+
   return (
     <>
       <Head>
@@ -53,7 +56,7 @@ export default function Home() {
 
               <div>
                 <IterateChip>
-                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataIndex': 0}}>
+                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataindex': 0}}>
                     <Link href="#">
                       <SellIcon fontSize='small' style={{color: "rgb(56, 189, 248)" }}/>
                       <span>Exclusive Deals</span> 
@@ -61,7 +64,7 @@ export default function Home() {
                   </div>
                   
 
-                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataIndex': 1}}>
+                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataindex': 1}}>
                     <Link href="#">
                       <FavoriteIcon fontSize='small' style={{color: "rgb(56, 189, 248)" }}/>
                       <span style={{color: "rgb(56, 189, 248)" }}>Sponsor Us</span> 
@@ -69,7 +72,7 @@ export default function Home() {
                   </div>
                 
 
-                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataIndex': 2}}>
+                  <div className={classNames(styles.chip, styles.iterate)} {...{'dataindex': 2}}>
                     <Link href={headerMenu.linkedInLink || "#"}>
                       <LinkedInIcon width={20} height={20} style={{color: "#0077B5" }}/>
                     </Link>
@@ -123,18 +126,26 @@ export default function Home() {
               />
 
               <div className={styles.filter_menu}>
-                <CustomButton
-                  bgColor='transparent'
-                  hoverBgColor='#333333'
-                  borderColor='#656D79'
-                >
-                  Filter
-                  <FilterAltIcon/>
-                </CustomButton>
+                <div className={styles.btn__wrapper}>
+                  <CustomButton
+                    bgColor='transparent'
+                    hoverBgColor='#333333'
+                    borderColor='#656D79'
+                  >
+                    Filter
+                    <FilterAltIcon/>
+                  </CustomButton>
+                </div>
+                
 
                 <ChipSwiper className={styles.swiper__wrapper} tags={tagData} />
+
+                <div className={styles.select}>
+                  <FilterDropdown/>
+                </div>
               </div>
 
+              
             </div>
           </div>
         </div>

@@ -56,9 +56,17 @@
       .filter_menu {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 24px;
+        gap: 40px;
         .swiper__wrapper {
           width: 60%;
+        }
+        .select {
+          width: 20%;
+        }
+        .btn__wrapper {
+          width: 20%;
         }
       }
     }

@@ -25,7 +25,7 @@ const IterateChip = (props: IterateChipInterface ) => {
       {
         children.map((item: any, index: number) => {
           return (
-            <div key={index} className={classNames(styles.chip, item.props.dataIndex != currentIndex ? styles.hide : "")}>
+            <div key={index} className={classNames(styles.chip, item.props.dataindex != currentIndex ? styles.hide : "")}>
               {item}
             </div>
           )
